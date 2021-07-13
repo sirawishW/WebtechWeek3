@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import NumberList from '../view/NumberList.vue'
 
 Vue.use(VueRouter)
 
@@ -10,7 +11,14 @@ const routes = [
     name: 'Home',
     component: Home
   },
+
   {
+    path: '/numbers',
+    name: 'NumberList',
+    component: NumberList
+   },
+  {
+
     path: '/about',
     name: 'About',
     // route level code-splitting
